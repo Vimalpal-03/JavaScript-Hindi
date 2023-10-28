@@ -28,3 +28,12 @@ JsUser.email="code123@gmail.com"
 Object.freeze(JsUser)
 
 console.log(JsUser);
+
+JsUser.greetingTwo=function(){
+    console.log(`hello js user ${this.name}`)
+    // console.log(`hello js user ${this["Full name"]`)
+
+}
+console.log(JsUser.greeting())
+console.log(JsUser.greetingTwo())
+
